@@ -1,0 +1,133 @@
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 40px;
+    background-image: linear-gradient(45deg, #7b1fa2, #4a148c);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.searchinput {
+    padding: 10px;
+    border-radius: 50px;
+    width: 400px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.searchinput::placeholder {
+    color: #ddd;
+}
+
+.search img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.search img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px 0;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.temperature {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.location {
+    color: #f1f1f1;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.weather-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    flex: 1 1 200px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.icon-container img {
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.text-container span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-container .label {
+    font-size: 16px;
+    font-weight: normal;
+}
